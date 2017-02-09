@@ -1,0 +1,51 @@
+<ion-view title="{{user.nickname}}" id="page5" class="profile">
+  <ion-content padding="true" class="has-header">
+    <div class="userdata row">
+      <div class="col col-25 col-center">
+        <img ng-src="{{user.avatar}}" alt="">
+      </div>
+      <div class="col col-75 nums col-center">
+        <div class="row">
+          <div class="col col-33">
+            <h3>4</h3>
+            <p>Publications</p>
+          </div>
+          <div class="col col-33">
+            <h3>3</h3>
+            <p>Subscribers</p>
+          </div>
+          <div class="col col-33">
+            <h3>4</h3>
+            <p>Subscriptions</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-100">
+            <button class="button button-light">Edit profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="name row">
+      <div class="col col-25">
+        <h5>{{user.name+" "+user.surname}}</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="photos">
+      <div ng-repeat="image in posts">
+        <div ng-if="$index % 3 == 0" class="row">
+          <div class="col col-33">
+            <img ng-if="posts[$index]" ng-src="{{posts[$index].img}}" alt="">
+          </div>
+          <div class="col col-33">
+            <img ng-if="posts[$index+1]" ng-src="{{posts[$index+1].img}}" alt="">
+          </div>
+          <div class="col col-33">
+            <img ng-if="posts[$index+2]" ng-src="{{posts[$index+2].img}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

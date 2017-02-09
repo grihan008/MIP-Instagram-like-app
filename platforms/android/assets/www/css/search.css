@@ -1,0 +1,11 @@
+.search div.scroll{
+  padding:0;
+}
+.search .images img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search .images .row{
+  padding:0;
+}

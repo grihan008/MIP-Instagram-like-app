@@ -1,0 +1,47 @@
+.profile .scroll{
+  padding:0;
+}
+.profile .bar-header h1{
+  text-align: left;
+}
+.profile .userdata img{
+  width:100%;
+  border-radius: 50%;
+}
+.profile .userdata .nums div div{
+  text-align: center;
+  padding: 0;
+}
+.profile .userdata .nums div div p{
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile .userdata h3{
+  margin:0;
+}
+.profile .userdata .button-light{
+  padding:0;
+  min-height: auto;
+  line-height: normal;
+  width:100%;
+  border: 1px solid black;
+}
+.profile .name{
+  text-align: center;
+}
+.profile hr{
+  margin:0;
+  border:0;
+  height:1px;
+  background-color: rgba(0,0,0,0.2);
+}
+.profile .photos{
+  padding:0;
+}
+
+.profile .photos img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}

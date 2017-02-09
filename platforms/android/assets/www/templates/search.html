@@ -1,0 +1,25 @@
+<ion-view title="Search" hide-nav-bar="true" id="page3" class="search">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <form id="search-form2" class="list">
+      <label class="item item-input" id="search-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+    </form>
+    <div class="images">
+      <div ng-repeat="image in images">
+        <div ng-if="$index % 3 == 0" class="row">
+          <div class="col col-33">
+            <img ng-if="images[$index]" ng-src="{{images[$index].img}}" alt="">
+          </div>
+          <div class="col col-33">
+            <img ng-if="images[$index+1]" ng-src="{{images[$index+1].img}}" alt="">
+          </div>
+          <div class="col col-33">
+            <img ng-if="images[$index+2]" ng-src="{{images[$index+2].img}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,43 @@
+<ion-view title="Not Instagram" id="page2" class="main">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-android-camera"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <div class="post" ng-repeat="post in posts">
+      <div class="row">
+        <div class="col col-20">
+          <img class="usericon" ng-src="{{post.avatar}}" alt="">
+        </div>
+        <div class="col col-80 col-center">
+          <h2>{{post.publisher}}</h2>
+        </div>
+      </div>
+      <div class="row photo">
+        <div class="col col-100">
+          <img ng-src="{{post.img}}" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <button id="notInstagram-button1" class="col col-10 button button-light  icon ion-ios-heart-outline" ng-click="like($index)"></button>
+        <button id="notInstagram-button2" class="col col-10 button button-light  icon ion-ios-chatbubble-outline"></button>
+      </div>
+      <hr>
+      <div class="row likes">
+        <div class="col col-100 col-center">
+          <h4><i class="icon ion-ios-heart"></i>Likes: {{post.likes}}<h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-100">
+          <p ng-repeat="comments in post.comments"><b class="commenter">{{comments.user}} </b>{{comments.text}}</p>
+        </div>
+      </div>
+      <div class="row time">
+        <div class="col col-100">
+          <p>View all comments</p>
+          <p>{{post.time}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

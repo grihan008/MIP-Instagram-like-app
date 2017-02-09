@@ -1,1 +1,1 @@
-MIP-Instagram-like-app
+NotAnInstagram

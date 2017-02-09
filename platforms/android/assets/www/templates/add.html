@@ -1,0 +1,17 @@
+<ion-view title="Add" id="page4">
+  <ion-content padding="true" class="has-header">
+    <button class="button button-full button-positive" ng-click="takePhoto();">
+				Take Photo
+			</button>
+			<button class="button button-full button-calm" ng-click="takePhoto(1);">
+				From Gallery
+			</button>
+        <div>
+          Picture uri:<br>
+          {{ picture }}
+          <div>
+            <img ng-src="{{picture}}" style="max-width: 100%">
+          </div>
+        </div>
+  </ion-content>
+</ion-view>
